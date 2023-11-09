@@ -2,9 +2,9 @@ There have been as many inquisitions as there have been questions raised and equ
 
 In this project I will find out the following result from titanic data.
 
-The average age of the people (both male and female) who died in the tragedy using Pig MapReduce.
+* The average age of the people (both male and female) who died in the tragedy using Pig MapReduce.
 
-How many persons survived – traveling class wise.
+* How many persons survived – traveling class wise.
 
 DATA SET DESCRIPTION
 
@@ -35,11 +35,11 @@ Column 12 : Embarked
 The titanic data set have been given in this repository in titanicdata file. Store the data in HDFS in mentiond directory in pig script file. and the execute the pig script file. Run the following command to count and store the average age of survived and died passanger.
 
 
-$ pig -x mapreduce '/home/hduser/data/titanic_avg_age_report.pig'
+`pig -x mapreduce '/home/hduser/data/titanic_avg_age_report.pig'`
 
 To find out the dead and servived passanger report run the second pig script file using following command
 
-$ pig -x mapreduce '/home/hduser/data/titanic_pclass_report.pig'
+`pig -x mapreduce '/home/hduser/data/titanic_pclass_report.pig'`
 
 After executing above Pig script file your result be saved in HDFS as well it the result will be shown in shell terminal also.
 
