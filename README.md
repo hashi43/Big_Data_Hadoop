@@ -35,12 +35,16 @@ Column 12 : Embarked
 The titanic data set have been given in this repository in titanicdata file. Store the data in HDFS in mentiond directory in pig script file. and the execute the pig script file. Run the following command to count and store the average age of survived and died passanger.
 
 
-`pig -x mapreduce '/home/hduser/data/titanic_avg_age_report.pig'`
-
+```
+pig -x mapreduce '/home/hduser/data/titanic_avg_age_report.pig'
+-- make sure have changed the file path according to your local system in above line
+```
 To find out the dead and servived passanger report run the second pig script file using following command
 
-`pig -x mapreduce '/home/hduser/data/titanic_pclass_report.pig'`
-
+```
+pig -x mapreduce '/home/hduser/data/titanic_pclass_report.pig'
+-- make sure have changed the file path according to your local system in above line
+```
 After executing above Pig script file your result be saved in HDFS as well it the result will be shown in shell terminal also.
 
 Make sure your hadoop cluster is running before executing the pig script file.
